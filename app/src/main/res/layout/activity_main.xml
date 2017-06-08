@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     >
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
     <FrameLayout
         android:id="@android:id/tabcontent"
         android:layout_width="0dp"
@@ -14,7 +24,7 @@
         app:layout_constraintBottom_toTopOf="@+id/fl_botton_tab_root"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_toolbar"
         >
 
     </FrameLayout>
