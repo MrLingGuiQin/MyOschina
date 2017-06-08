@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">My Oschina</string>
+    <string name="app_name">开源中国</string>
+    <string name="main_tab_bar_news">综合</string>
+    <string name="main_tab_bar_tweet">动弹</string>
+    <string name="main_tab_bar_add">添加</string>
+    <string name="main_tab_bar_explore">发现</string>
+    <string name="main_tab_bar_me">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
