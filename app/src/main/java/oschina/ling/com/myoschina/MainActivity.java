@@ -15,7 +15,7 @@ import oschina.ling.com.myoschina.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
     @BindView(android.R.id.tabhost)
-    FragmentTabHost mTabhost;
+    MyFragmentTabhost mTabhost;
     @BindView(R.id.tb_toolbar)
     Toolbar mToolbar;
 
@@ -55,13 +55,13 @@ public class MainActivity extends BaseActivity {
             textView.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(mainTab.getResIcon()), null, null);
             if (i == 2) {
                 tabView.setVisibility(View.INVISIBLE);
+                mTabhost.setNoChangeTabId(getString(mainTab.getResName()));
             }
             //设置Tab按钮之间的分割线  设为透明 
             mTabhost.getTabWidget().setDividerDrawable(getResources().getDrawable(android.R.color.transparent));
             tabSpec.setIndicator(tabView);
             mTabhost.addTab(tabSpec, mainTab.getClz(), null);
         }
-
     }
 
 
@@ -87,7 +87,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main,menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 

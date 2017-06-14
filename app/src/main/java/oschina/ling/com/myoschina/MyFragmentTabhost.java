@@ -28,6 +28,7 @@ public class MyFragmentTabhost extends FragmentTabHost {
     public void onTabChanged(String tabId) {
         if (tabId.equals(mNoChangeTabId)) {
             setCurrentTabByTag(mCurrentTabId);
+            return;
         }
         super.onTabChanged(tabId);
         mCurrentTabId = tabId;

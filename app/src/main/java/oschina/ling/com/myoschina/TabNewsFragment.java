@@ -9,20 +9,13 @@ import android.view.ViewGroup;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * 综合fragment
  */
 public class TabNewsFragment extends Fragment {
-
-
-    public TabNewsFragment() {
-        // Required empty public constructor
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_tab_news, container, false);
     }
-
 }

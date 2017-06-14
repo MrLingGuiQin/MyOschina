@@ -14,7 +14,12 @@
         <item name="android:windowBackground">@color/window_background</item>
         <item name="windowNoTitle">true</item>
         <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:textViewStyle">@style/myTextStyle</item>
     </style>
 
+    <style name="myTextStyle">
+        <item name="android:textColor">@color/colorDefaultText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 
 </resources>
